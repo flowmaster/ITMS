@@ -25,7 +25,10 @@
 			<classes dir="build/classes"/>
 		</war>
 	</target>
-	
+	<target name="test"> 
+         <echo message = "This part should be updated later."/> 
+        </target> 
+
 	<target name="clean">
 		<delete dir="dist" />
 		<delete dir="build" />
