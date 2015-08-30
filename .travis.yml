@@ -1,2 +1,8 @@
 language: java
-
+edge: true
+provider: cloudfoundry
+username: sambed.pattanaik@verizon.com
+password: master123
+api: https://api.run.pivotal.io
+organization: myawesomeorganization
+space: staging
