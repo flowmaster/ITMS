@@ -1,0 +1,6 @@
+applications: 
+name: ITMS 
+memory: 512M 
+instances: 1 
+path: build/FlowMaster.war
+buildpack: https://github.com/flowmaster/ITMS.git
