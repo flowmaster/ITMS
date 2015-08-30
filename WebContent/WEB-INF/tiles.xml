@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE tiles-definitions PUBLIC   
+   "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"   
+   "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="baseLayout" template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="Verizon Interview Tracking System" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	<definition name="homepage" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Home" />
+		<put-attribute name="body" value="/WEB-INF/jsp/loginsuccess.jsp" />
+	</definition>
+	<definition name="loginFailure">
+		<put-attribute name="title" value="Login Failed" />
+		<put-attribute name="body" value="/WEB-INF/jsp/failure.jsp" />
+	</definition>
+	<definition name="success" extends="baseLayout">
+		<put-attribute name="title" value="User Added Successfully" />
+		<put-attribute name="body" value="/WEB-INF/jsp/success.jsp" />
+	</definition>
+	<definition name="addnewcandidate" extends="baseLayout">
+		<put-attribute name="title" value="Add new Candidate" />
+		<put-attribute name="body" value="/WEB-INF/jsp/addnew.jsp" />
+	</definition>
+	<definition name="assigninterviewer" extends="baseLayout">
+		<put-attribute name="title" value="AssignInterviewer" />
+		<put-attribute name="body" value="/WEB-INF/jsp/assigninterview.jsp" />
+	</definition>
+	<definition name="interviewerhome" extends="baseLayout">
+		<put-attribute name="title" value="Interviewer Home" />
+		<put-attribute name="body" value="/WEB-INF/jsp/interviewhome.jsp" />
+	</definition>
+	<definition name="interviewerhomedetail" extends="baseLayout">
+		<put-attribute name="title" value="Interviewer Home" />
+		<put-attribute name="body" value="/WEB-INF/jsp/interviewerhome.jsp" />
+	</definition>
+
+	<definition name="evaluatecandidate" extends="baseLayout">
+		<put-attribute name="title" value="Add new Candidate" />
+		<put-attribute name="body" value="/WEB-INF/jsp/interviewer.jsp" />
+	</definition>
+	
+	<definition name="candiddetailhome" extends="baseLayout">
+		<put-attribute name="title" value="Candidate Detail Search" />
+		<put-attribute name="body" value="/WEB-INF/jsp/candidhome.jsp" />
+	</definition>
+	
+	<definition name="candidfulldetail" extends="baseLayout">
+		<put-attribute name="title" value="Candidate Detail" />
+		<put-attribute name="body" value="/WEB-INF/jsp/candidfulldetail.jsp" />
+	</definition>
+	
+	<definition name="addcandidatesuccess" extends="baseLayout">
+		<put-attribute name="title" value="Candidate Detail" />
+		<put-attribute name="body" value="/WEB-INF/jsp/addcandidatesuccess.jsp" />
+	</definition>
+	
+	<definition name="scoreinsertsuccess" extends="baseLayout">
+		<put-attribute name="title" value="Score Insert Sucess" />
+		<put-attribute name="body" value="/WEB-INF/jsp/scoreinsertsuccess.jsp" />
+	</definition>	
+	
+</tiles-definitions>
