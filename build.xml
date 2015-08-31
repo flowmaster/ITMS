@@ -19,9 +19,6 @@
 			</fileset>		
 	</path>
 	
-	<target name="test"> 
-         <echo message = "This part should be updated later."/> 
-        </target> 
 	<!-- ========================= JCID BUILD Clean up Starts ========================== -->
 	<target name="clean">
 		<echo>JCID Cleanup:</echo>
@@ -69,7 +66,9 @@
 			</lib>
 		</war>
 	</target>
-
+	<target name="test"> 
+         <echo message = "Unit Testing added to this."/> 
+        </target> 
 	
 
 </project>
